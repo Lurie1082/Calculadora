@@ -1,0 +1,87 @@
+ *, *::before, *::after{
+
+   box-sizing: border-box;
+ }
+
+ body{
+
+  background-color:beige;
+  
+
+ }
+
+ .App{
+   height: 25%;
+   width: 25%;
+   background-color:rgba(0, 0, 255, 0.308);
+   border-radius: 20px;
+   border: black;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   
+  
+ }
+
+ .Calculator-grid{
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   min-height: 80vh;
+   grid-template-columns: repeat(4,80px);
+   grid-template-rows:minmax(80px,auto) repeat(5,80px);
+   
+   
+
+
+ }
+
+ .Calculator-grid > button{
+
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color:black;
+  border: 1px solid white;
+  outline: none;
+  background-color: #fafafa75;
+  margin: 3px;
+ }
+
+ .Calculator-grid > button:hover{
+
+   background-color: #fafafa;
+
+ }
+
+ .span-two{
+
+   grid-column: span 2;
+ }
+
+ .output{
+   grid-column: 1 /-1;
+   margin-bottom: .5rem;
+   background-color: white;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   flex-direction: column;
+   border-radius: 10px;
+   padding: 10px;
+   word-wrap: break-word;
+   word-break: break-all;
+   
+
+ }
+
+ .output .previous-opered{
+   color: black;
+   font-size:1.5rem
+ }
+
+ .output .current-opered{
+  color:red;
+  font-size:2.5rem
+}
